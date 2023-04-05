@@ -66,7 +66,7 @@ async function requestSuiFromFaucet(recipient) {
     while (true) {
         console.log(`Requesting SUI from faucet for ${recipient}`);
 
-        let data = await axios("https://proxy.scrapeops.io/v1/?api_key=19f4aeab-d057-4bd5-bcfa-92957b9432fa&url=https%3A%2F%2Ffaucet.testnet.sui.io%2Fgas&keep_headers=True", {
+        let data = await axios("https://proxy.scrapeops.io/v1/?api_key=&url=https%3A%2F%2Ffaucet.testnet.sui.io%2Fgas&keep_headers=True", {
             headers: {
                 'Content-Type': 'application/json'
             },
